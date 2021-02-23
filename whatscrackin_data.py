@@ -25,7 +25,6 @@ def retrieve_data():
                                 subreddit='wallstreetbets',
                                 filter=['url','author', 'title', 'subreddit'])
                                 # limit=500) #delete to remove limit
-     
 
     # dict to store cashtag keys and number of mentions as values
     cashtag_dict = {}
