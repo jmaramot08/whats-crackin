@@ -12,9 +12,9 @@ def display_data():
     sorted_dict = retrieve_data()
     num = 0
     for key, value in sorted_dict.items():
-        exec('Label%d=tk.Label(canvas,text="%s",font=16,cursor="hand2")\nLabel%d.pack()' % (num,
+        exec('Label%d=tk.Label(canvas,text="%s",font=16,cursor="hand2",bg="white")\nLabel%d.pack()' % (num,
                 f'{key}: {value} mentions', num))
-        exec('Label%d.bind("<Button-1>", lambda e: callback("https://www.google.com/search?q=%s"))' % (num, f'{key}'))
+        exec('Label%d.bind("<Button-1>", lambda e: callback("https://www.google.com/search?q=%s"))' % (num, f'{key}'))
         num += 1
 
 def reset():
